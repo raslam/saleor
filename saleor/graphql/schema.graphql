@@ -6299,6 +6299,7 @@ type Shop {
   defaultWeightUnit: WeightUnitsEnum
   translation(languageCode: LanguageCodeEnum!): ShopTranslation
   automaticFulfillmentDigitalProducts: Boolean
+  reserveStockDurationMinutes: Int
   defaultDigitalMaxDownloads: Int
   defaultDigitalUrlValidDays: Int
   companyAddress: Address
@@ -6358,6 +6359,7 @@ input ShopSettingsInput {
   defaultMailSenderName: String
   defaultMailSenderAddress: String
   customerSetPasswordUrl: String
+  reserveStockDurationMinutes: Int
 }
 
 type ShopSettingsTranslate {
